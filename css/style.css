@@ -2,6 +2,24 @@ body {
     max-width: 1500px;
 }
 
+h1 {
+    font-family: "zeitung", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+h2 {
+    font-family: "zeitung", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+p {
+    font-family: "sofia-pro", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
 /* Marias Reol*/
 .reol {
     background: rgba(176, 153, 125, .5);
