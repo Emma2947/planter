@@ -1,6 +1,24 @@
+body {
+    max-width: 1500px;
+}
 
+/* Marias Reol*/
+.reol {
+    background: rgba(176, 153, 125, .5);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 80px 0px 80px;
+}
 
+.tekst-reol {
+    text-align: center;
+}
 
+.reolen {
+    width: 400px;
+    margin-right: 150px;
+    margin-top: 20px;
+}
 
 
 
