@@ -73,8 +73,7 @@ p {
     display: none;
   }
   
-
-
+  
 /*Billede med parallax effekt*/
 .parallax {
      background-image: url("/image/parallaxbillede.jpg");
@@ -88,8 +87,11 @@ p {
 .overskrift-parallax {
      text-align: center;
      padding-top: 40%;
+     font-size: 60px;
+     color: #95ab8b;
+     text-shadow: 4px 3.5px #68855c;    
 }
- 
+
 /*Animation om aflæggere*/
 .animation {
      height: 768px;
