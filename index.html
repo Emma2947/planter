@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webdokumentar om planteentusiasten Maria</title>
     <script src="/js/script.js"></script>
+    <script src="/js/animation.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/mmd7apk.css">
     <link rel="stylesheet" href="https://use.typekit.net/mmd7apk.css">
@@ -34,13 +35,14 @@
 
 <!--billede med parallax effekt-->
 <section class="parallax">
-     <img class="parallax-billede" src="/image/unsplash-planter.jpg" alt="Billeder af planter">
 </section>
 
 <!--Animation om aflæggere-->
-<section class="animation">
-     <video class="animation-video" width="1020" height="940" src="video/animation.mp4"></video>
-</section>
+ <section class="animation">
+         <video id="animations-video" height="940" width="1020" controls="controls" autoplay="autoplay">
+             <source src="/video/animation.mp4" type="video/mp4">
+         </video>
+ </section>
 
 <!--Afslutning om Maria-->
 <section class="maria">

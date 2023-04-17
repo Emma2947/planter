@@ -42,15 +42,16 @@ p {
 
 /*Billede med parallax effekt*/
 .parallax {
-height: 768px;
+     background-image: url("/image/unsplash-planter.jpg");
+     min-height: 768px;
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
 }
-
-.parallax-billede {
-
-}
-
+ 
 /*Animation om aflæggere*/
 .animation {
-height: 768px;
-text-align: center;
+     height: 768px;
+     text-align: center;
 }
