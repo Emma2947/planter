@@ -8,7 +8,6 @@
     <script src="/js/script.js"></script>
     <script src="/js/reol.js"></script>
     <script src="/js/animation.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/mmd7apk.css">
     <link rel="stylesheet" href="https://use.typekit.net/mmd7apk.css">
@@ -45,14 +44,18 @@
         
     </section>
     <section class="billede-reol">
-        <div class="image-container">
-            <img src="/image/marias-reol.png" alt="Marias Reol" class="reolen">
-            <div class="video-container">
-                <video src="alovera.mp4"></video>
-                <button class="close-btn">Close</button>
-            </div>
-        </div>
+        <img src="/image/marias-reol.png" alt="Marias Reol" class="reolen">
+        <a href="#" onclick="showVideo(1)" class="plante1"></a>
+        <a href="#" onclick="showVideo(2)" class="plante2"></a>
+        <a href="#" onclick="showVideo(3)" class="plante3"></a>
     </section>
+    <div id="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <iframe id="video-player" src="" frameborder="0" allowfullscreen width="500" height="500"></iframe>
+        </div>
+
+    </div>
 </section>
 
 <!--billede med parallax effekt-->
