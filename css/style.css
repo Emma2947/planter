@@ -106,18 +106,22 @@ p {
 
 .overskrift-maria{
 padding-left: 20%;
-font-size: 200%;
 padding-top: 10%;
 text-align: center;
+font-size: 60px;
+    color: #68855c;
+    text-shadow: 4px 3.5px #3a5439;  
 }
 
 .citat-maria {
     padding-left: 20%;
-    padding-top: 10%;
+    padding-top: 5%;
+    font-style: italic;
 }
 .brødtekst-maria { 
     padding-left: 20%;
     padding-top: 10%;
+    padding-bottom: 5%;
 }
 .portrat-maria {
     height: 550px;
