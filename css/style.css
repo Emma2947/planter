@@ -40,17 +40,17 @@ p {
 }
 
 
+/*Billede med parallax effekt*/
+.parallax {
+height: 768px;
+}
 
+.parallax-billede {
 
-
+}
 
 /*Animation om aflæggere*/
 .animation {
-height: 768px;    
-}
-
-.video-animation {
-}
-
-video {
+height: 768px;
+text-align: center;
 }
