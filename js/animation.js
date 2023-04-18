@@ -1,4 +1,4 @@
-/*Virker ikke efter hensigten*/ 
+/*Virker ikke efter hensigten - muligvis grundet chromes browser*/ 
 var video = document.createElement("animations-video");
 video.setAttribute("height", "360");
 video.setAttribute("width", "640");
