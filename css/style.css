@@ -150,6 +150,17 @@ font-size: 60px;
     text-shadow: 4px 3.5px #3a5439;  
 }
 
+.overskrift-maria  {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 1s;
+}
+
+.overskrift-maria.slide-in {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
 .citat-maria {
     padding-left: 20%;
     padding-top: 5%;
