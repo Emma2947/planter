@@ -199,7 +199,7 @@ font-size: 60px;
 .citat-maria  {
     opacity: 0;
     transform: translateX(-100%);
-    transition: opacity 2s, transform 4s;
+    transition: opacity 2s, transform 2s;
 }
 
 .citat-maria.slide-in {
@@ -216,7 +216,7 @@ font-size: 60px;
 .brødtekst-maria  {
     opacity: 0;
     transform: translateX(-100%);
-    transition: opacity 6s, transform 8s;
+    transition: opacity 2s, transform 4s;
 }
 
 
