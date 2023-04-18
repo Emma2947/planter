@@ -24,6 +24,7 @@ function showVideo(videoId) {
     // Vis popup-vinduet
     const popup = document.getElementById('popup');
     popup.style.display = 'block';
+    
 
     // Find den valgte video
     const videoSrc = `/video/plante${videoId}.mp4`;
