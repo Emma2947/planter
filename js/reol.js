@@ -1,3 +1,4 @@
+// overskrift slider ind
 window.addEventListener('scroll', function() {
     var element = document.querySelector('.overskrift-reol');
     var position = element.getBoundingClientRect();
@@ -25,7 +26,7 @@ function showVideo(videoId) {
     popup.style.display = 'block';
 
     // Find den valgte video
-    const videoSrc = `/video/plante1.mp4`;
+    const videoSrc = `/video/plante${videoId}.mp4`;
 
  // Opdater iframe-kilden til at vise den valgte video
  const videoPlayer = document.getElementById('video-player');
@@ -36,5 +37,5 @@ function showVideo(videoId) {
   videoPlayer.style.width = videoWidth + 'px';
   videoPlayer.style.height = videoHeight + 'px';
 
-
 }
+
