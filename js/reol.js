@@ -1,37 +1,40 @@
-// Wrap every letter in a span
-var textWrapper = document.querySelector('.overskrift-reol');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-anime.timeline({loop: true})
-  .add({
-    targets: '.overskrift-reol .letter',
-    translateX: [40,0],
-    translateZ: 0,
-    opacity: [0,1],
-    easing: "easeOutExpo",
-    duration: 1200,
-    delay: (el, i) => 500 + 30 * i
-  }).add({
-    targets: '.overskrift-reol .letter',
-    translateX: [0,-30],
-    opacity: [1,0],
-    easing: "easeInExpo",
-    duration: 1100,
-    delay: (el, i) => 100 + 30 * i
+window.addEventListener('scroll', function() {
+    var element = document.querySelector('.overskrift-reol');
+    var position = element.getBoundingClientRect();
+    var offset = window.innerHeight * 0.7; // adjust as needed
+  
+    if (position.top < offset) {
+      element.classList.add('slide-in');
+    }
   });
 
-//video
-  const imageContainer = document.querySelector('.image-container');
-const videoContainer = imageContainer.querySelector('.video-container');
-const video = videoContainer.querySelector('video');
-const closeBtn = videoContainer.querySelector('.close-btn');
+// Find popup-elementerne og knappen for at lukke popup'en
+const popup = document.getElementById('popup');
+const popupContent = document.querySelector('.popup-content');
+const closeBtn = document.querySelector('.close');
 
-imageContainer.addEventListener('click', () => {
-  videoContainer.style.display = 'block';
-  video.play();
-});
+// Funktionen, der viser popup-vinduet med den valgte video
+function showVideo(videoId) {
 
-closeBtn.addEventListener('click', () => {
-  videoContainer.style.display = 'none';
-  video.pause();
-});
+    console.log('Show video button clicked');
+
+
+    
+    // Vis popup-vinduet
+    const popup = document.getElementById('popup');
+    popup.style.display = 'block';
+
+    // Find den valgte video
+    const videoSrc = `/video/plante1.mp4`;
+
+ // Opdater iframe-kilden til at vise den valgte video
+ const videoPlayer = document.getElementById('video-player');
+ videoPlayer.setAttribute('src', videoSrc);
+
+  const videoWidth = videoPlayer.videoWidth;
+  const videoHeight = videoPlayer.videoHeight;
+  videoPlayer.style.width = videoWidth + 'px';
+  videoPlayer.style.height = videoHeight + 'px';
+
+
+}
