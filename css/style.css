@@ -164,14 +164,14 @@ p {
 /*afslutning - Maria ----------------------*/
 
 .maria {
-    margin-top: 20%;
+    margin-top: 6%;
     background: rgba(176, 153, 125, .5);
     box-shadow: 0px 0px 10px;
 }
 
 .overskrift-maria{
-padding-left: 20%;
-padding-top: 10%;
+padding-left: 15%;
+padding-top: 2%;
 text-align: left;
 font-size: 60px;
     color: #68855c;
@@ -190,17 +190,42 @@ font-size: 60px;
   }
 
 .citat-maria {
-    padding-left: 20%;
-    padding-top: 3%;
+    padding-left: 15%;
+    padding-top: 2%;
     font-style: italic;
     font-size: 20px;
 }
+
+.citat-maria  {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 2s, transform 4s;
+}
+
+.citat-maria.slide-in {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
 .brødtekst-maria { 
-    padding-left: 20%;
-    padding-top: 6%;
-    padding-bottom: 5%;
+    padding-left: 15%;
+    padding-top: 3%;
+    padding-bottom: 3%;
     font-size: 20px;
 }
+.brødtekst-maria  {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 6s, transform 8s;
+}
+
+
+.brødtekst-maria.slide-in {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+
 .portrat-maria {
     height: 550px;
     padding-right: 50%;
