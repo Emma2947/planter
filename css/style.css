@@ -38,24 +38,15 @@ p {
     font-size: 70px;
 }
 
-.overskrift-video {
-    animation: slide-in-out 10s ease-in-out 1;
-    animation-fill-mode: forwards;
-  }
-  
-  @keyframes slide-in-out {
-    0% {
-      transform: translateX(-100%);
-    }
-    10% {
-      transform: translateX(0);
-    }
-    90% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(200%);
-    }
+.overskrift-video  {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 1s;
+}
+
+.overskrift-video.slide-in {
+    opacity: 1;
+    transform: translateX(0);
   }
   
 
@@ -66,7 +57,6 @@ p {
     height: 801px;
     margin-top: -8px;
 }
-
 
 /* Marias Reol*/
 .reol {
@@ -111,8 +101,7 @@ p {
     font-size: 20px;
 }
 
-
-.reolen {
+.billede-reol img {
     width: 400px;
     margin-right: 150px;
     margin-top: 20px;
@@ -130,6 +119,11 @@ p {
     margin-left: 15px;
     margin-top: 3px;
     font-size: 30px;
+}
+
+.close:hover,
+.close:focus {
+  cursor: pointer;
 }
 
 .billede-reol a {
@@ -183,20 +177,21 @@ p {
      height: 768px;
      text-align: center;
 }
-
 /*afslutning - Maria ----------------------*/
 
 .maria {
-    margin-top: 6%;
     background: rgba(176, 153, 125, .5);
     box-shadow: 0px 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 80px 20px 80px;
+    margin-bottom: 100px;
+    margin-top: 100px;
 }
 
 .overskrift-maria{
-padding-left: 15%;
-padding-top: 2%;
-text-align: left;
-font-size: 60px;
+    text-align: left;
+    font-size: 60px;
     color: #68855c;
     text-shadow: 4px 3.5px #3a5439;  
 }
@@ -213,55 +208,21 @@ font-size: 60px;
   }
 
 .citat-maria {
-    padding-left: 15%;
-    padding-top: 2%;
     font-style: italic;
     font-size: 20px;
 }
 
-.citat-maria  {
-    opacity: 0;
-    transform: translateX(-100%);
-    transition: opacity 2s, transform 2s;
-}
-
-.citat-maria.slide-in {
-    opacity: 1;
-    transform: translateX(0);
-  }
-
 .brødtekst-maria { 
-    padding-left: 15%;
-    padding-top: 3%;
     padding-bottom: 3%;
     font-size: 20px;
 }
-.brødtekst-maria  {
-    opacity: 0;
-    transform: translateX(-100%);
-    transition: opacity 2s, transform 4s;
-}
-
-
-.brødtekst-maria.slide-in {
-    opacity: 1;
-    transform: translateX(0);
-  }
-
-
 .portrat-maria {
-    height: 550px;
-    padding-right: 50%;
-    padding-left: 20%;
-    margin-top: 40%;
+    width: 400px;
+    margin-right: 100px;
+    margin-top: 110px;
 }
 .section-wrapper{
-    display: flex;
-    max-width: 1080px;
-    margin: auto;
+    text-align: left;
+    margin-right: 80px;
+    margin-left: 30px;
 }
-.column{
-    width: 100%;
-     text-align: left;
-}
-

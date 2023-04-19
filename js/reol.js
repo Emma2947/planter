@@ -4,28 +4,21 @@ window.addEventListener('scroll', function() {
     var position = element.getBoundingClientRect();
     var offset = window.innerHeight * 0.9; // adjust as needed
   
-    if (position.top < offset) {
+    if (position.top < offset && position.bottom >= 0) {
       element.classList.add('slide-in');
+    } else {
+      element.classList.remove('slide-in');
     }
   });
 
-// Find popup-elementerne og knappen for at lukke popup'en
-const popup = document.getElementById('popup');
-const popupContent = document.querySelector('.popup-content');
-const closeBtn = document.querySelector('.close');
 
 // Funktionen, der viser popup-vinduet med den valgte video
 function showVideo(videoId) {
-
-    console.log('Show video button clicked');
-
-
     
     // Vis popup-vinduet
     const popup = document.getElementById('popup');
     popup.style.display = 'block';
     
-
     // Find den valgte video
     const videoSrc = `/video/plante${videoId}.mp4`;
 
@@ -40,3 +33,8 @@ function showVideo(videoId) {
 
 }
 
+var closeBtn = document.getElementsByClassName("close")[0];
+function closePopup() {
+  const popup = document.getElementById('popup');
+  popup.style.display = "none";
+}
