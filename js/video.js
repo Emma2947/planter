@@ -32,14 +32,21 @@
         event.target.playVideo();
     }
 
-    
-    // overskrift slider ind
-window.addEventListener('scroll', function() {
-    var element = document.querySelector('.overskrift-video');
-    var position = element.getBoundingClientRect();
-    var offset = window.innerHeight * -0.7; // adjust as needed
-  
-    if (position.top < offset) {
-      element.classList.add('slide-in');
+    const section = document.getElementById("video");
+const heading = section.querySelector("h1");
+
+function handleIntersection(entries) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      heading.classList.remove("slide-in-out");
+      void heading.offsetWidth; // Trigger reflow to restart animation
+      heading.classList.add("slide-in-out");
     }
   });
+}
+
+const observer = new IntersectionObserver(handleIntersection);
+observer.observe(section);
+
+
+  
