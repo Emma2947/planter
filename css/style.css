@@ -1,8 +1,4 @@
 /* Generelt styling på siden*/
-body {
-    /*max-width: 1500px;*/
-}
-
 h1 {
     font-family: "zeitung", sans-serif;
     font-weight: 900;
@@ -25,6 +21,7 @@ p {
     font-weight: 300;
     font-style: normal;
 }
+
 
 /*Video*/
 #video h1 {
@@ -54,7 +51,6 @@ p {
     position: relative;
     width: 100%;
     height: 801px;
-    margin-top: -8px;
 }
 
 /* Marias Reol*/
@@ -110,7 +106,7 @@ p {
 #popup {
     display: none;
     position: absolute;
-    margin-left: 46%;
+    margin-left: 48%;
     margin-top: 7%;
 } 
 
@@ -166,7 +162,7 @@ p {
 
 .overskrift-parallax {
      text-align: center;
-     padding-top: 25%;
+     padding-top: 23%;
      font-size: 75px;
      color: #95ab8b;
      text-shadow: 4px 3.5px #3a5439;    
@@ -226,3 +222,54 @@ p {
     margin-right: 80px;
     margin-left: 30px;
 }
+/*
+
+@media screen and (min-width: 1700px) {
+    p {
+        font-size: 40px;
+    }
+    .tekst-reol p {
+        font-size: 40px;
+    }
+    .tekst-reol li {
+        font-size: 40px
+    }
+    .overskrift-video {
+        font-size: 650px;
+        top: 58%;
+    }
+    #video-container {
+        height: 1050px;
+    }
+    #popup {
+        margin-left: 63%;
+        margin-top: 7%;
+    } 
+    .portrat-maria {
+        width: 650px;
+    }
+    .maria {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .overskrift-maria {
+        font-size: 100px;
+        text-shadow: 6px 5px #3a5439;  
+    }
+    .overskrift-parallax {
+        padding-top: 12%;
+        font-size: 95px;
+        color: #95ab8b;
+        text-shadow: 4px 3.5px #3a5439;    
+   }
+   .tekst-reol h2 {
+        font-size: 100px;
+        text-shadow: 6px 5px #3a5439; 
+        margin-top: 15px;
+   }
+   #video h1 {
+	top: 58%;
+    text-shadow: 6px 5px #3a5439; 
+    font-size: 125px;
+}
+}*/

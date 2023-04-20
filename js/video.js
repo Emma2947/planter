@@ -25,7 +25,6 @@
             }
         });
     }
-    
     //Afspilleren starter, når den er klar
     function onPlayerReady(event) {
         event.target.playVideo();
@@ -35,7 +34,7 @@
 window.addEventListener('scroll', function() {
   var element = document.querySelector('.overskrift-video');
   var position = element.getBoundingClientRect();
-  var offset = window.innerHeight * 15; // adjust as needed
+  var offset = window.innerHeight * 15;
 
   if (position.top < offset && position.bottom >= 0) {
     element.classList.add('slide-in');
