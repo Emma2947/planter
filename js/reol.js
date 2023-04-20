@@ -26,11 +26,6 @@ function showVideo(videoId) {
  const videoPlayer = document.getElementById('video-player');
  videoPlayer.setAttribute('src', videoSrc);
 
-  const videoWidth = videoPlayer.videoWidth;
-  const videoHeight = videoPlayer.videoHeight;
-  videoPlayer.style.width = videoWidth + 'px';
-  videoPlayer.style.height = videoHeight + 'px';
-
 }
 
 var closeBtn = document.getElementsByClassName("close")[0];
