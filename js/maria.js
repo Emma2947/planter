@@ -1,3 +1,4 @@
+// overskrift slider ind hver gang at sectionen vises på siden
 window.addEventListener('scroll', function() {
     var element = document.querySelector('.overskrift-maria');
     var position = element.getBoundingClientRect();

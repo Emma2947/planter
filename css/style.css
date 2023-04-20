@@ -29,7 +29,7 @@ p {
 /*Video*/
 #video h1 {
 	position: absolute;
-	top: 70%;
+	top: 58%;
 	left: 5%;
 	z-index: 1;
     color: #95ab8b;
@@ -62,7 +62,7 @@ p {
     background: rgba(176, 153, 125, .5);
     display: flex;
     justify-content: space-between;
-    padding: 15px 80px 0px 80px;
+    padding: 20px 80px 30px 80px;
     box-shadow: 0px 0px 10px;
     margin-bottom: 100px;
     margin-top: 100px;
@@ -101,9 +101,10 @@ p {
 }
 
 .billede-reol img {
-    width: 400px;
-    margin-right: 150px;
-    margin-top: 20px;
+    width: 62%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-left: 6%;
 }
 
 #popup {

@@ -1,4 +1,4 @@
-// overskrift slider ind
+// overskrift slider ind hver gang at sectionen vises på siden
 window.addEventListener('scroll', function() {
     var element = document.querySelector('.overskrift-reol');
     var position = element.getBoundingClientRect();
@@ -12,22 +12,22 @@ window.addEventListener('scroll', function() {
   });
 
 
-// Funktionen, der viser popup-vinduet med den valgte video
+//popup-vinduet vises med den valgte video
 function showVideo(videoId) {
     
-    // Vis popup-vinduet
     const popup = document.getElementById('popup');
     popup.style.display = 'block';
     
-    // Find den valgte video
+    // Den rigtige video findes automatisk
     const videoSrc = `/video/plante${videoId}.mp4`;
 
- // Opdater iframe-kilden til at vise den valgte video
+ // Den valgte video vises
  const videoPlayer = document.getElementById('video-player');
  videoPlayer.setAttribute('src', videoSrc);
 
 }
 
+// Videoen lukkes ved at trykke på luk-knappen
 var closeBtn = document.getElementsByClassName("close")[0];
 function closePopup() {
   const popup = document.getElementById('popup');

@@ -1,10 +1,9 @@
-    // Opret en variabel til at indeholde video-id'et
+    //video-id'et fra youtube
     var videoId = 'By-64CDf6Xk';
 
-    // Opret en variabel til at indeholde afspilleren
-    var player;
-    
-    // Funktion til at oprette afspilleren
+  
+    var player; 
+    //afspilleren oprettes
     function onYouTubeIframeAPIReady() {
         player = new YT.Player('video-container', {
             height: '100%',
@@ -27,12 +26,12 @@
         });
     }
     
-    // Funktion til at starte afspilleren, når den er klar
+    //Afspilleren starter, når den er klar
     function onPlayerReady(event) {
         event.target.playVideo();
     }
 
-    // overskrift slider ind
+// overskrift slider ind hver gang at sectionen vises på siden
 window.addEventListener('scroll', function() {
   var element = document.querySelector('.overskrift-video');
   var position = element.getBoundingClientRect();

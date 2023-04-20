@@ -1,4 +1,5 @@
 /*Virker ikke efter hensigten - muligvis grundet chromes browser*/ 
+// Videoen afspilles automatisk når sektionen er vist
 var video = document.createElement("animations-video");
 video.setAttribute("height", "360");
 video.setAttribute("width", "640");
